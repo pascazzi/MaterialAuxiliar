@@ -1,0 +1,145 @@
+empiezo con el video: https://youtu.be/HiXLkL42tMU
+
+voy por el minuto 36: https://youtu.be/HiXLkL42tMU?t=2196
+Empieza gitHUB (vi git)
+
+Primera vez para armar un repositorio (recien instalado git)
+El repositorio es sobre una carpeta.
+
+Voy a la carpeta desde windows y tiro un  "git bash here"
+desde el menu contextual de explorador windows.
+(tambien puedo abrir app GIT BASH y navegar hasta mi carpeta)
+
+*****************************************
+Nueva carpeta
+Agrego contenido
+Abrir bash ahi
+git init
+git add .
+git commit -m 'Inicio repositorio'
+	no hace falta otra vez en la misma compu
+	git config --global user.email "pascazzi@hotmail.com"
+	git config --global user.name "pablo"
+
+GITHUB: nuevo repositorio <nombre>
+--Ojo, no crear el readme por que en ese caso se crea la "rama" main o master.
+--Si la rama no se crea en la web, entonces todo lo que hicimos antes sirve. 
+--en cambio si se crea la rama en la web, deberiamos usar esa y clonarla en la pc
+git remote add origin https://github.com/pascazzi/<nombre>.git ((copio del browser))
+git push -u origin master
+
+En una nueva PC:
+Me copio la URL desde github: https://github.com/pascazzi/PrimerPruebaPablo.git
+Abro un bash en alguna carpeta (donde va a crear la carpeta del proyecto):
+git clone https://github.com/pascazzi/PrimerPruebaPablo.git
+ Desde la carpeta donde estoy parado, ahi agrega una carpeta adentro
+
+*****************************************
+En el bash:
+git init  ((arranca))
+
+git status ((ve que estamos trabajando, es decir nada ahora))
+
+Administra un archivo:
+git add <archivo>
+
+Todos los archivos:
+git add .
+
+git config --global user.email "pascazzi@hotmail.com"
+git config --global user.name "pablo"
+
+Con esto veo el user.name el user.email etc
+   git config --list  
+   git config --global user.name
+  git config --global user.email 
+
+git commit 
+	El commit abre el editor que configure (vsstudio x ej)
+	Escribo en la primera linea lo que quiero que quede como 
+	detalle del commit.
+	Grabo y cierro
+
+puedo usar tambien:
+	git commit -m "mensaje de log"
+
+git log
+
+Descartar cambios y restaurar ultimo commit
+git checkout -- <archivo>
+
+Comparar con ultimo commiteado
+git diff <archivo>
+
+Para enviar el archivo (pero no lo envia)
+git add <archivo>
+	Luego de esto, va el commit (o mas tarde)
+
+-------------
+nota: Solo se administran carpetas que tengan algo adentro.
+Ignorar una carpeta
+	Creo un archivo .gitignore
+	ahi agrego una lista de archivos y carpetas
+
+----------------------
+Muestra las ramas:
+	git branch 
+
+Agregar una rama:
+	git branch ramita
+
+cambiar rama:
+	git checkout ramita
+Dentro de la "ramita" puedo hacer modificaciones y add y commits
+Si luego paso a otro branch con "checkout" todo lo que agregue, desaparece.
+Si vuelvo a ramita, entonces SI esta.
+
+=================================================
+GITHUB
+
+git remote add origin https://github.com/pascazzi/PrimerPruebaPablo.git
+git push -u origin master
+
+
+
+
+
+
+Borro la carpeta local (esta todo subido)
+Me copio la URL desde github: https://github.com/pascazzi/PrimerPruebaPablo.git
+Abro un bash en alguna carpeta:
+ git clone https://github.com/pascazzi/PrimerPruebaPablo.git
+ Desde la carpeta donde estoy parado, ahi agrega una carpeta adentro
+
+git remote -v
+
+git remote add origin https://github.com/pascazzi/ProyectosJupiter.git
+
+---recuperar novedades remotas
+git pull origin
+	equivale a:
+ git fetch origin
+ +++ MAS +++ 
+ git merge.
+
+-----*/*/*/*/*/
+git add .
+git commit -m "msg"
+git push
+
+-------*/*/*/*/
+
+----- CAMBIO DONDE TRABAJA JUPYTER
+Desde un cmd de anaconda:
+jupyter notebook --generate-config
+This writes a file to C:\Users\username\.jupyter\jupyter_notebook_config
+Abro el archivo y Change line 375 #c.NotebookApp.notebook_dir = ''
+c.NotebookApp.notebook_dir = 'D:\PabloProyectos'
+Make sure you use forward slashes in your path.
+
+D:\PabloProyectos
+
+
+
+
+
