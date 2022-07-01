@@ -1,0 +1,17 @@
+{
+  "nombreYAp":"Jonh Doe",
+  "profesion":"Programador",
+  "edad":25,
+  "lenguajes":["PHP","Javascript","Dart"],
+  "disponibilidadParaViajar":true,
+  "rangoProfesional": {
+      "aniosDeExperiencia": 12,
+      "nivel": "Senior"
+  },
+  "empleados": [
+       { "nombre":"Jorge" , "apellido":"Mesa", "edad":28 },
+       { "nombre":"Ana" , "apellido":"Sánchez", "edad":21 },
+       { "nombre":"Pedro" , "apellido":"Lee","edad":44 }
+    ]
+
+}
